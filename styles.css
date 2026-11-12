@@ -1,14 +1,15 @@
 /* Add your CSS to this file */
-body {
+body{
     margin: 0;
     font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 
 .container {
     margin: 0 auto;
+    display: flex;
     max-width: 960px;
-    width: 100%;
-    font-family: '-apple-system, 'BlinkMacSystemFont', "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif';
+    width: 100%;    
     font-size: 18px;
 }
 
@@ -17,22 +18,21 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f8f9fa;
+    background-color: #ffffff;
     font-size: 18px;
 }
+
 
 /*navigation and hover styles*/
 nav ul {
     display:flex;
-    justify-content: flex-end;
     list-style: none;
     gap: 20px;
     color: #6b7280;
 }
 
 nav ul:hover{
-    color: #5A67D8;
-}
+    color: #5A67D8;}
 
 /*hero section styles*/
 .overview-hero {
@@ -52,6 +52,7 @@ nav ul:hover{
 .overview-hero-image img{
     max-width: 50%;
     height: auto;
+  
 }
 
 .overview-hero-text{
@@ -66,27 +67,33 @@ nav ul:hover{
 .cards{
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 25px;
+    gap: 30px;
     box-shadow: 4px 2px 4px rgba(0,0,0,0.5);
 }
 
 .card {
-    border: 1px solid #e2e8f0;
+    border: 4px solid;
     border-radius: 5px;
-    overflow: hidden;
+    border-bottom-width: 5px;
+    border-color: #E2E8F0;
 }
 .card img {
-    width: 120%;
-    height: 200px;
-    object-fit: cover;
+    width: 100%;
+    height: 150px;
+    object-fit: fill ;
 }
 
 .card-body {
     padding: 15px;
 }
 
-.card h3{
-    color: #48BB78
+.learn-about h2{
+    color: #4A5568;
+    font-size: 24px;
+}
+.learn-about h3{
+    color: #48BB78;
+    font-size: 21px;
 }
 
 /*COVID Testing styles*/
@@ -122,6 +129,9 @@ nav ul:hover{
     gap: 30px;
 }
 
+.stories  h2{
+    color: #5a67d8;
+}
 .stories article img{
     width: 25%;
     height: auto;
@@ -138,6 +148,7 @@ nav ul:hover{
     text-align: center;
     padding: 30px;
     background-color: #48BB78;
+    color: #ffff;
 }
 
 
@@ -153,12 +164,18 @@ nav ul:hover{
     padding: 10px 20px;
     cursor: pointer;
     background-color: #5A67D8;
-    
+    color: #ffff;
+    border: none;
+}
+
+.newsletter .message{
+   
+    font-style: italic;
 }
 
 footer {
     background-color: #4A5568;
     color: #ffff;
     padding: 10px;
-    ;
+   
 }
